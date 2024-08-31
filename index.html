@@ -1,0 +1,90 @@
+<!DOCTYPE html> 
+<html> 
+    <head> 
+        <link rel="stylesheet" href="style.css"> 
+        <title>Media Elements Website</title> 
+    </head> 
+    <body> 
+        <section> 
+            <form> 
+                <h1>Start</h1> 
+                <div class="inputbox"> 
+                    <ion-icon name="mail-outline"></ion-icon> 
+                    <input type="username" required> 
+                    <label for="">Username:</label> 
+                </div> 
+                <div class="inputbox"> 
+                    <ion-icon name="lock-closed -outline"></ion-icon> 
+                    <input type="password" required> 
+                    <label for="">password</label> 
+                </div> 
+                <div class="forget"> 
+                    <label for=""><input type="checkbox">To remember</label> 
+                    <a href="#">forgotten  password</a> 
+                </div> 
+                <button id="login-btn">To begin</button> 
+                <div class="register"> 
+                    <p>I dont have an account<br><a href="#">register</a></p> 
+                </div> 
+            </form> 
+        </section> 
+ 
+ 
+         
+        <h2>Image</h2> 
+        <img src="WhatsApp Image 2024-08-31 at 03.39.14_95002f08.jpg" alt="Image"> 
+ 
+        
+        <h2>Audio</h2> 
+        <audio controls> 
+           <source src="drake-gods-plans.mp3" type="audio/mp3"> 
+        </audio> 
+ 
+         
+        <h2>Video</h2> 
+        <video controls> 
+           <source src="WhatsApp Video 2024-08-26 at 13.03.28_bc272cc7.mp4" type="video/mp4"> 
+        </video> 
+ 
+     
+        <h1>Welcome to my website</h1> 
+        <p>You can't beat the devil without God</p> 
+        <p>Being a good person sometimes gets you worried</p>
+
+        <a href="www.facebook.com">my facebook link</a> 
+ 
+        <script> 
+            // Add event listener to login button 
+             document.getElementById('login-btn').addEventListener('click',  function() { 
+              // Get input values 
+             var user = document.querySelector('.inputbox:nth-child(1)    input').value; 
+             var password = document.querySelector('.inputbox:nth-child(2) input').value; 
+            });
+             
+             // Basic validation 
+             if (user === '' || password === '') { 
+              alert('Please fill in all fields'); 
+               return;
+            }
+             
+             // Simulate login process (replace with actual login logic) 
+             alert('Logging in...'); 
+              
+             // Clear input fields 
+              document.querySelector('.inputbox:nth-child(1) input').value = ''; 
+             document.querySelector('.inputbox:nth-child(2) input').value = ''; 
+             
+
+             // Add event listener to audio element 
+             document.querySelector('audio').addEventListener('play', function() 
+            { 
+             alert('Audio started playing!'); 
+            }); 
+         
+            // Add event listener to video element 
+             document.querySelector('video').addEventListener('play', function() 
+            { 
+              alert('Video started playing!');  
+            });
+         </script>
+            
